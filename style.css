@@ -1,0 +1,71 @@
+@import url(component/navbar.css);
+@import url(component/grid.css);
+
+:root{
+    font-family: 'Lobster', 'Passions Conflict', cursive;
+    font-size: 16px;
+}
+
+* {     
+    margin-left:0;
+} 
+
+/*scrollbar*/
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #2E2F2F;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #CDDDDD;
+}
+/*scrollbar*/
+
+h1{
+    text-align: center;
+    color: #051014;
+}
+
+h2{
+    text-align: center;
+    color: #030a0d9a;
+    font-size: 14px;
+}
+
+#annam{
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+}
+
+#annam img{
+    border-radius: 50%;
+    animation: spin 40ms infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+#annam img:hover{
+    animation-play-state: paused;
+}
+
+#bio{
+    text-align: center;
+}
+
+#cat{
+    max-width: 100%;
+    border-radius: 10px;
+}
